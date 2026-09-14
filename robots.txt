@@ -1,0 +1,4 @@
+# Private-preview setting. This discourages search engines from indexing the site.
+# It does not provide password protection or control who can open the URL.
+User-agent: *
+Disallow: /

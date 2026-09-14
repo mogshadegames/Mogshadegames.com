@@ -1,186 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Mogshade Games</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --cream:#EAE3D5;
-    --ink:#241D16;
-    --ink-soft:#4A4034;
-    --forest-dark:#1E3327;
-    --rust:#BC4E2C;
-    --rust-dark:#9E3F21;
-    --plum:#392541;
-    --plum-deep:#2C1C33;
-    --sage:#A9B98C;
-    --sage-ink:#3A4A2A;
-    --line: rgba(36,29,22,0.16);
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;background:var(--cream);color:var(--ink);font-family:'Work Sans',sans-serif;line-height:1.6;}
-  h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;margin:0;letter-spacing:-0.01em;}
-  a{color:inherit;text-decoration:none;}
-  img{display:block;max-width:100%;border-radius:8px;}
-  .wrap{max-width:760px;margin:0 auto;padding:0 28px;}
-  @media(max-width:640px){.wrap{padding:0 18px;}}
-
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:5px;font-weight:600;font-size:15px;border:none;cursor:pointer;}
-  .btn-primary{background:var(--rust);color:#FBF3EA;}
-  .btn-primary:hover{background:var(--rust-dark);}
-  .btn-link{text-decoration:underline;text-underline-offset:4px;color:var(--forest-dark);}
-
-  header.site{border-bottom:1px solid var(--line);padding:16px 0;}
-  nav{max-width:1080px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
-  @media(max-width:640px){nav{padding:0 18px;}}
-  .logo{display:flex;align-items:center;gap:10px;}
-  .logo img{width:34px;height:34px;border-radius:0;}
-  .logo-word{font-family:'Fraunces',serif;font-weight:600;font-size:18px;line-height:1.15;}
-  .nav-links{display:flex;gap:24px;flex-wrap:wrap;}
-  .nav-links a{font-size:15px;color:var(--ink-soft);}
-  .nav-links a:hover, .nav-links a.active{color:var(--ink);}
-
-  .page-hero{padding:64px 0 20px;}
-  .kicker{font-size:12px;font-weight:600;letter-spacing:0.03em;color:var(--rust-dark);display:block;margin-bottom:14px;}
-  .page-hero h1{font-size:clamp(32px,5vw,46px);line-height:1.12;max-width:14ch;}
-
-  section.copy{padding:44px 0;}
-  section.copy + section.copy{border-top:1px solid var(--line);}
-  section.copy h2{font-size:clamp(22px,3vw,28px);margin-bottom:16px;}
-  section.copy p{font-size:16.5px;color:var(--ink-soft);margin:0 0 16px;max-width:62ch;}
-  section.copy p:last-child{margin-bottom:0;}
-  section.copy.emphasis{background:var(--plum);color:#F1E7EA;margin:0 -100vw;padding:56px 100vw;border-top:none;}
-  section.copy.emphasis .wrap{max-width:680px;}
-  section.copy.emphasis h2{color:#F7EFE9;}
-  section.copy.emphasis p{color:#DCC9CE;}
-
-  .cta-row{padding:50px 0 80px;text-align:center;}
-  .cta-row p{color:var(--ink-soft);margin:0 0 20px;font-size:16px;}
-
-  footer{background:var(--forest-dark);color:#E7E0D3;padding:36px 0;}
-  .footer-grid{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;max-width:1080px;margin:0 auto;padding:0 28px;}
-  @media(max-width:640px){.footer-grid{padding:0 18px;}}
-  .footer-logo{display:flex;align-items:center;gap:10px;}
-  .footer-logo img{width:28px;height:28px;}
-  .footer-links{display:flex;gap:22px;flex-wrap:wrap;}
-  .footer-links a{font-size:14px;color:#CBC2AE;}
-  .footer-bottom{margin-top:20px;padding-top:18px;border-top:1px solid rgba(231,224,211,0.15);font-size:12.5px;color:#A9A08B;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:1080px;margin-left:auto;margin-right:auto;padding-left:28px;padding-right:28px;}
-  @media(max-width:640px){.footer-bottom{padding-left:18px;padding-right:18px;}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Mogshade Games, a storytelling-led publisher creating games, adventures, journals and tools for shared and solitary imagination.">
+  <meta name="theme-color" content="#344839">
+  <meta name="robots" content="noindex, nofollow">
+  <title>About | Mogshade Games</title>
+  <!-- Private-preview setting: remove the robots line above before a public launch. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23344839'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='35' font-weight='700' fill='%23f3eddf'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header class="site">
-  <nav>
-    <a href="index.html" class="logo">
-      <img src="logo-icon.png" alt="Mogshade Games door icon">
-      <span class="logo-word">Mogshade Games</span>
-    </a>
-    <div class="nav-links">
-      <a href="index.html#games">Games</a>
-      <a href="about.html" class="active">About</a>
-      <a href="index.html#workshop">News</a>
-      <a href="index.html#workshop">Resources</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Mogshade Games home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-text"><span>Mogshade</span><span>Games</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#games">Games</a>
+        <a href="#top" aria-current="page">About</a>
+        <a class="button" href="index.html#mailing-list">Mailing list <span class="arrow" aria-hidden="true">→</span></a>
+      </nav>
+
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#games">Games</a>
+          <a href="#top" aria-current="page">About</a>
+          <a class="button" href="index.html#mailing-list">Mailing list</a>
+        </nav>
+      </details>
     </div>
-    <a href="index.html#newsletter" class="btn btn-primary">Join the Mailing List</a>
-  </nav>
-</header>
+  </header>
 
-<main>
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="shell page-hero-inner">
+        <div>
+          <p class="eyebrow" style="color: var(--gold);">About Mogshade Games</p>
+          <h1 id="page-title">The space between the thing that is and the thing it might become.</h1>
+        </div>
+        <p class="page-hero-note">A warm, strange place for gathering, wandering, wondering and making meaning through play.</p>
+      </div>
+    </section>
 
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="kicker">OUR STORY</span>
-      <h1>The space between the thing that is and the thing it might become.</h1>
+    <section class="story-section" aria-labelledby="story-one">
+      <div class="shell story-grid">
+        <div>
+          <span class="story-number">01 · The workshop</span>
+          <h2 id="story-one">Mogshade Games</h2>
+        </div>
+        <div class="story-copy">
+          <p class="lead">Mogshade Games is a storytelling-led, community-minded publisher creating tabletop games, adventures, journals, tools and strange little doorways into imagination.</p>
+          <p>We make games for people who want to gather, wonder, laugh, think, build, explore and make meaning together. Some of our stories are shared around a table with friends. Some are played with family. Some are written quietly in the space between one thought and the next.</p>
+          <p>At the heart of everything we make is the belief that stories help people connect with each other, with themselves, and with the worlds they might dare to imagine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section alt" aria-labelledby="story-two">
+      <div class="shell story-grid">
+        <div>
+          <span class="story-number">02 · The meaning</span>
+          <h2 id="story-two">What is Mogshade?</h2>
+        </div>
+        <div class="story-copy">
+          <p class="lead">Mogshade is what happens when people gather and make meaning from the world around them.</p>
+          <p>It appears in stories, symbols, play, pictures, objects, memories, warnings, jokes and shared structures. It is the potential of what something can be, discovered through the things that already are.</p>
+          <p>It is the hush between the trees and the weight that comes through the branches when the ordinary world begins to listen. It is the feeling before a story opens.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-three">
+      <div class="shell story-grid">
+        <div>
+          <span class="story-number">03 · The invitation</span>
+          <h2 id="story-three">Who is it for?</h2>
+        </div>
+        <div class="story-copy">
+          <p class="lead">Mogshade Games is for you.</p>
+          <p>If you have travelled far enough or read enough to reach the question, you are already near the door.</p>
+          <p>Perhaps you want candlelit journaling, something fun to read, draw or write, family play that becomes a core memory, or an evening around a table with snacks, laughter and friends. You might look at a puzzle or problem together and make it everyone’s entertainment for the evening, everyone’s game, everyone’s enjoyment.</p>
+          <p>There is room here for builders, creators, educators, families, gamers, readers, quiet wanderers and cheerful troublemakers. There is room to be with others and room to spend better time with yourself.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section alt" aria-labelledby="story-four">
+      <div class="shell story-grid">
+        <div>
+          <span class="story-number">04 · The work</span>
+          <h2 id="story-four">What we make</h2>
+        </div>
+        <div class="story-copy">
+          <p class="lead">We make storytelling games and creative resources that invite people to play, imagine, reflect and take part.</p>
+          <p>Our work ranges from family doorway adventures and solo society stories to contested myths and darkly funny dungeon crawls. Each project has its own voice, while sharing the same curiosity about what stories can do.</p>
+          <ul class="story-list">
+            <li>Tabletop roleplaying games</li>
+            <li>Solo and group adventures</li>
+            <li>Journals, prompts and printable aids</li>
+            <li>Creative tools and play resources</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-five">
+      <div class="shell story-grid">
+        <div>
+          <span class="story-number">05 · The path</span>
+          <h2 id="story-five">How we publish</h2>
+        </div>
+        <div class="story-copy">
+          <p class="lead">Mogshade Games is digital first, shaped with the community, and printed when there is demand.</p>
+          <p>We want to build carefully, openly and sustainably. That means sharing work, listening to the people who gather around it, supporting games after release, and creating physical products when the audience is there to hold them.</p>
+          <p>The story comes first. The community helps shape the path. The printed thing arrives when the door is ready to stay open.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-door" aria-labelledby="closing-title">
+      <div class="shell">
+        <p class="eyebrow" style="color: var(--gold);">The door is open</p>
+        <h2 id="closing-title">Ready to find your next story?</h2>
+        <p>Meet the five games currently taking shape inside the Mogshade workshop.</p>
+        <a class="button button-light" href="index.html#games">Explore the games <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <a class="brand footer-brand" href="index.html" aria-label="Mogshade Games home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-text"><span>Mogshade</span><span>Games</span></span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#games">Games</a>
+        <a href="#top" aria-current="page">About</a>
+        <a href="index.html#mailing-list">Mailing list</a>
+      </nav>
+      <p class="footer-note">© 2026 Mogshade Games<span>Play a kinder, stranger world.</span></p>
     </div>
-  </section>
-
-  <section class="copy">
-    <div class="wrap">
-      <h2>Mogshade Games</h2>
-      <p>Mogshade Games is a storytelling and community-led publisher creating tabletop games, adventures, journals, tools, and strange little doorways into imagination.</p>
-      <p>We make games for people who want to gather, wonder, laugh, think, build, explore, and make meaning together. Some of our stories are shared around a table with friends. Some are played with family. Some are written quietly by candlelight, in the hush between one thought and the next.</p>
-      <p>At the heart of everything we make is the belief that stories help people connect: with each other, with themselves, and with the worlds they might dare to imagine.</p>
-    </div>
-  </section>
-
-  <section class="copy">
-    <div class="wrap">
-      <h2>What is Mogshade Games?</h2>
-      <p>Mogshade Games is a place for stories.</p>
-      <p>It is for evenings around a table with snacks, laughter, friends, and a problem everyone wants to solve together. It is for families opening a door into adventure. It is for people writing alone, wandering through their own thoughts, and finding something waiting there.</p>
-      <p>We create games and creative resources that help people play, reflect, imagine, and connect. Our work ranges from child-led doorway adventures to strange mythic games, dystopian dungeon crawls, journaling tools, and other story-shaped things still rustling in the trees.</p>
-    </div>
-  </section>
-
-  <section class="copy emphasis">
-    <div class="wrap">
-      <h2>What is Mogshade?</h2>
-      <p>Mogshade is the space between the thing that is and the thing it might become.</p>
-      <p>It is the hush between the trees. The weight that comes through the branches when the ordinary world begins to listen. It is what happens when people gather around symbols, jokes, warnings, maps, dice, pictures, questions, memories, and half-made ideas, then turn them into meaning.</p>
-      <p>Mogshade is not one world. It is the feeling before a story opens.</p>
-    </div>
-  </section>
-
-  <section class="copy">
-    <div class="wrap">
-      <h2>Who is Mogshade Games for?</h2>
-      <p>Mogshade Games is for you.</p>
-      <p>If you have travelled far enough to ask the question, then you are already near the door.</p>
-      <p>It is for people who want entertainment, wonder, laughter, danger, reflection, and strange beautiful nonsense. It is for people who want to sit around a table with snacks, laughter, and friends, look at a puzzle or problem, and make it everyone's entertainment for the evening: everyone's game, everyone's enjoyment.</p>
-      <p>It is for families making core memories. It is for readers, writers, drawers, makers, builders, troublemakers, and quiet wanderers. It is for people who want to be with others, and people who want to spend better time with themselves.</p>
-    </div>
-  </section>
-
-  <section class="copy">
-    <div class="wrap">
-      <h2>What we make</h2>
-      <p>We make storytelling games and creative resources that invite people to play, imagine, and take part.</p>
-      <p>Some are full tabletop roleplaying games. Some are smaller adventures, journals, prompts, tools, printable aids, or strange objects for the table. Some are made for family play. Some are darker, weirder, sharper, or more grown-up. Some are built to be read, some to be played, and some to sit with you until you decide what they mean.</p>
-      <p>Across all of them, our aim is the same: to help people open the door and see what is waiting.</p>
-    </div>
-  </section>
-
-  <section class="copy">
-    <div class="wrap">
-      <h2>Our publishing approach</h2>
-      <p>Mogshade Games is digital first, shaped with the community, and printed when there is demand.</p>
-      <p>We want to build carefully, openly, and sustainably. That means sharing work, listening to the people who gather around it, supporting games after release, and creating physical products when the audience is there to hold them.</p>
-      <p>The story comes first. The community shapes the path. The printed thing arrives when the door is ready to stay open.</p>
-    </div>
-  </section>
-
-  <section class="cta-row">
-    <div class="wrap">
-      <p>Ready to find your next story?</p>
-      <a href="index.html#games" class="btn btn-primary">Explore Our Games →</a>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="footer-grid">
-    <a href="index.html" class="footer-logo">
-      <img src="footer-icon.png" alt="Mogshade Games door icon">
-      <span class="logo-word">Mogshade Games</span>
-    </a>
-    <nav class="footer-links">
-      <a href="index.html#games">Games</a>
-      <a href="about.html">About</a>
-      <a href="index.html#workshop">News</a>
-      <a href="index.html#workshop">Resources</a>
-    </nav>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Mogshade Games</span>
-    <span>Play a kinder, stranger world.</span>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>
